@@ -1,4 +1,4 @@
-function Mouse(name) {
+export default function Mouse(name) {
     this.name = name;
     this.isDead = false;
 }
@@ -6,5 +6,3 @@ function Mouse(name) {
 Mouse.prototype.die = function () {
     this.isDead = true; 
 };
-
-module.exports = Mouse;
